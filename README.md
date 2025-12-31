@@ -40,8 +40,8 @@ Traditional keypoint-based methods can often retrieve the correct identity withi
 
 
 ### 2.2 Models
-- Keypoint methods (11)
-- Ensemble (1)
+- Keypoint methods (11)  *TODO: add traditional models to appendix*
+- Ensemble (1)  *TODO: add methodology of ensemble model to appendix*
 - Compute setting: Since these are all traditional methods and not vectorized, all is compute with CPU, with the exception of the ensemble one where the backbone that choose keypoint methods to use is a CNN. 
 
 ### 2.3 Query distortions
