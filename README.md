@@ -226,7 +226,7 @@ Ensemble method clearly stabilizes CMC@1 under blur/gamma/rotation and especiall
 ---
 
 ### 5.5 Where the ensemble helps most
-We evaluate whether the ensemble reduces worst-case degradation relative to the strongest single method.
+Despite strong clean performance, the ensemble does **not** provide the best worst-case robustness on mAP: for every augmentation type, the strongest single method retains more mAP at maximum severity (Table 4), with the largest gaps under **rotation** (Δ = −0.2055) and **brightness** (Δ = −0.1835). This suggests the current ensembling strategy improves average behavior and top-k stability, but the hardest tail cases dominating worst-case mAP are better handled by certain specialized single pipelines under extreme distortions.
 
 **Table 4. Ensemble gain at max severity (mAP retained)**
 | Augmentation | Best single worst_rel | Ensemble worst_rel | Δ (ens - best) |
